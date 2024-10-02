@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento de Requisitos - Classificador de Nível de Herói</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        ul {
+            margin: 10px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Documento de Requisitos</h1>
+<h2>Sistema: Classificador de Nível de Herói</h2>
+<h3>Histórico de Revisões</h3>
+<ul>
+    <li><strong>Data:</strong> 01/10/2024</li>
+    <li><strong>Descrição:</strong> Especificação inicial dos requisitos</li>
+    <li><strong>Responsável:</strong> Rafael Borring</li>
+</ul>
+
+<h2>1. Objetivos</h2>
+<p>
+    O Classificador de Nível de Herói é um sistema que visa classificar heróis de acordo com a quantidade de experiência (XP) que possuem, apresentando um nível correspondente.
+</p>
+
+<h2>1.1. Objetivos do Documento</h2>
+<p>
+    Este documento tem como objetivo descrever e especificar os requisitos do sistema, servindo como guia para os desenvolvedores e interessados.
+</p>
+
+<h2>2. Escopo Geral do Produto</h2>
+<p>
+    O sistema classifica heróis com base em sua experiência, exibindo mensagens correspondentes ao nível alcançado.
+</p>
+
+<h2>3. Convenções, Termos e Abreviações</h2>
+<ul>
+    <li>XP – Experiência do herói.</li>
+    <li>Nível – Classificação do herói com base na XP.</li>
+</ul>
+
+<h2>4. Requisitos</h2>
+
+<h2>4.1. Requisitos Funcionais</h2>
+<table>
+        <tr>
+            <td>RF001</td>
+            <td>Classificar o herói com base na XP fornecida.</td>
+        </tr>
+        <tr>
+            <td>Entrada</td>
+            <td>Nome do herói e quantidade de XP.</td>
+        </tr>
+        <tr>
+            <td>Saída</td>
+            <td>Nível do herói.</td>
+        </tr>
+        <tr>
+            <td>Pré-condição</td>
+            <td>Informações de nome e XP fornecidas.</td>
+        </tr>
+        <tr>
+            <td>Pós-condição</td>
+            <td>Classificação do herói realizada com sucesso.</td>
+        </tr>
+    </table>
+
+<h2>4.2 Requisitos Não Funcionais</h2>
+<table>
+    <tr>
+        <td>RNF001</td>
+        <td>O sistema deve ser responsivo e funcionar em dispositivos móveis.</td>
+    </tr>
+</table>
+
+<h2>4.3 Requisitos de Domínio</h2>
+<table>
+    <tr>
+        <td>RD001</td>
+        <td>
+            <p>Se XP for menor do que 1.000 = Ferro</p>
+            <p>Se XP for entre 1.001 e 2.000 = Bronze</p>
+            <p>Se XP for entre 2.001 e 5.000 = Prata</p>
+            <p>Se XP for entre 5.001 e 7.000 = Ouro</p>
+            <p>Se XP for entre 7.001 e 8.000 = Platina</p>
+            <p>Se XP for entre 8.001 e 9.000 = Ascendente</p>
+            <p>Se XP for entre 9.001 e 10.000= Imortal</p>
+            <p>Se XP for maior ou igual a 10.001 = Radiante</p>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
